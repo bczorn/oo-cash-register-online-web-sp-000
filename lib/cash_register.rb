@@ -14,7 +14,11 @@ def total
 end
 
 def add_item(title, price, quantity = 1)
-  
+  i = 0
+  while i < quantity
+    @@items << title
+    i += 1
+  end
   x = (price * quantity)
   @total = @total + x
   @x = x
@@ -30,7 +34,6 @@ def apply_discount
 end
 
 def items
-
   @@items
 end
 
