@@ -14,7 +14,7 @@ def total
 end
 
 def add_item(title, price, quantity = 1)
-  self.items
+  
   x = (price * quantity)
   @total = @total + x
   @x = x
